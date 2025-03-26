@@ -1,0 +1,72 @@
+*{
+   
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(45deg,#153677,#4e085f);
+    display: flex;
+     justify-content: center;
+      align-items: center;
+      margin-top: 10rem;
+    
+}
+
+.container{
+    background-color: white;
+    width: 450px;
+    height:400px;
+   
+}   
+ h2{
+  display: flex;
+  justify-content: center;
+   gap: 1rem;
+  font-size: 30px;
+}
+input{
+   width:350px;
+   margin-left: 2rem;
+   border:2px solid black;
+   border-radius:10px;
+    padding: 10px;
+    font-weight: 14px;
+}
+form #add{
+    border-radius: 10px;
+    border:1px solid black;
+    padding: 5px;
+    height: 40px;
+    background-color: #e38e8e;
+    width:50px;
+    font-size: 17px;
+
+}
+li{
+    list-style-type:none;
+    cursor:pointer;
+    
+}
+
+ul li::before{
+    content: '';
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    border:1px solid black;
+    display: inline-block;/*It(block) allows you to set the width and height of the element, which is not possible with purely inline elements.*/
+    margin-right: 10px; /* Space between the circle and the list item text */
+    background-color: transparent;
+    
+}
+li span{
+    margin-left: auto;
+}
+.delete{
+    margin-left: 15rem;
+    background-color: red;
+    cursor: pointer;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
